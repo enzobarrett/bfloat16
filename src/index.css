@@ -76,6 +76,7 @@ form {
 .exponent {
   background-color: lightgreen;
   padding:5px;
+  white-space: nowrap;
 }
 
 .result {
@@ -127,7 +128,16 @@ form {
   display: none;
 }
 
-@media screen and (orientation:portrait){
+/*@media screen and (orientation:portrait){*/
+/*  .App {*/
+/*    display: none;*/
+/*  }*/
+/*  .warning {*/
+/*    display: inline-block;*/
+/*  }*/
+/*}*/
+
+@media only screen and (max-width: 600px) {
   .App {
     display: none;
   }

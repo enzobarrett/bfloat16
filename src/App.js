@@ -46,7 +46,7 @@ function App() {
                 </p>
             </div>
         </div>
-        <h2 className={"warning"}>Please rotate your device to use the visualizer!</h2>
+        <h2 className={"warning"}>Please rotate your device or use a bigger screen!</h2>
         </>
     );
 }
