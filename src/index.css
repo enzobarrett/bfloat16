@@ -122,3 +122,23 @@ form {
   display: inline-block;
   text-align: left;
 }
+
+.warning {
+  display: none;
+}
+
+@media only screen and (max-width: 759px) {
+  .App {
+      display: none;
+  }
+  .warning {
+    display: inline-block;
+  }
+}
+
+.warning {
+  font-weight: normal;
+  margin-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}

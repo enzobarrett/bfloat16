@@ -4,11 +4,11 @@ import Bfloat from "./Components/Bfloat"
 
 function App() {
     return (
+        <>
         <div className={"App"}>
             <h1>bFloat16 Visualizer</h1>
             <h2>by Enzo Barrett</h2>
             <main>
-
                 <Bfloat/>
             </main>
 
@@ -46,6 +46,8 @@ function App() {
                 </p>
             </div>
         </div>
+        <h2 className={"warning"}>Please rotate your device to use the visualizer!</h2>
+        </>
     );
 }
 
