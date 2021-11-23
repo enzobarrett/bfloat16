@@ -11,7 +11,6 @@ class ExpandedView extends React.Component {
     }
 
     parseBinFloat(str) {
-        console.log(str);
         const floatParts = str.split(".");
         const wholeDecimal = parseInt(floatParts[0], 2);
 
@@ -21,7 +20,6 @@ class ExpandedView extends React.Component {
 
         for (var i = 0; i < floatParts[1].length; i++) {
             if (floatParts[1].charAt(i) === '1') {
-                console.log(divisor);
                 sum += (1/divisor);
             }
 
@@ -73,7 +71,6 @@ class ExpandedView extends React.Component {
             for (let i = expValBiased; i >= 0; i--) {
                 man.push(0);
             }
-            console.log(man);
             man.splice(expValBiased + 1, 0, '.');
             result = this.parseBinFloat(man.join(''));
             // add in sign
