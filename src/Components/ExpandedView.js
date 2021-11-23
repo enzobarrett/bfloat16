@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { faEquals } from '@fortawesome/free-solid-svg-icons'
-import {parse} from "@fortawesome/fontawesome-svg-core";
 
 class ExpandedView extends React.Component {
     parseFloatRadix(num, radix) {
@@ -56,13 +55,47 @@ class ExpandedView extends React.Component {
 
         var result = 0;
 
-        // shift value
-        if (expValBiased >= 0) {
+        // SPECIAL CASES
+
+        // display 0 or -0 for 0 exp and 0 man
+        if (expValBiased === -127 && man.splice().slice(0,1).every(item => item === 0)) {
+            result = parseInt(signNumber) === 1 ? "0" : "-0";
+        }
+
+        else if (expValBiased === 128 && man.splice().slice(0,1).every(item => item === 0)) {
+            result = parseInt(signNumber) === 1 ? "∞" : "-∞";
+        }
+
+        // shift val left for positive exp
+        else if (expValBiased >= 0) {
+            for (let i = expValBiased; i >= 0; i--) {
+                man.push(0);
+            }
+            console.log(man);
             man.splice(expValBiased + 1, 0, '.');
             result = this.parseBinFloat(man.join(''));
             // add in sign
             result *= parseInt(signNumber)
         }
+
+        // shift value right for negetive exp
+        else if (expValBiased < 0) {
+            for (let i = expValBiased; i < 0; i++) {
+                // add a zero at the front
+                man.unshift(0);
+            }
+
+            // add radix to the front
+            man.unshift(".");
+            man.unshift("0");
+
+            // calculate result from array
+            result = this.parseBinFloat(man.join(''));
+
+            // add in sign
+            result *= parseInt(signNumber)
+        }
+
 
         return (
             <div className={"expandedView"}>

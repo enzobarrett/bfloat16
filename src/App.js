@@ -18,6 +18,33 @@ function App() {
                 <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
             </form>
 
+            <div className={"key"}>
+                <h2>== Examples ==</h2>
+
+                <p>
+                3f80 = 0 01111111 0000000 = 1<br/>
+                c000 = 1 10000000 0000000 = −2
+                </p>
+
+                <h2>=== Zeros and infinities ===</h2>
+
+                <p>
+                0000 = 0 00000000 0000000 = 0<br/>
+                8000 = 1 00000000 0000000 = −0
+                </p>
+
+                <p>
+                7f80 = 0 11111111 0000000 = infinity<br/>
+                ff80 = 1 11111111 0000000 = −infinity
+                </p>
+
+                <h2>=== Special values ===</h2>
+
+                <p>
+                4049 = 0 10000000 1001001 = 3.140625 ≈ π ( pi )<br/>
+                3eab = 0 01111101 0101011 = 0.333984375 ≈ 1/3
+                </p>
+            </div>
         </div>
     );
 }

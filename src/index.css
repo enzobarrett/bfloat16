@@ -108,3 +108,17 @@ form {
 .paypal {
   margin-top: 4%;
 }
+
+.key {
+    margin-bottom: 5%;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.key > p {
+    font-size: larger;
+  display: inline-block;
+  text-align: left;
+}
