@@ -27,8 +27,8 @@ function App() {
                 </p>
 
                 <p>
-                7f7f = 0 11111110 1111111 ≈ 3.38953139 × 1038 (max finite positive value in bfloat16 precision) <br/>
-                0080 = 0 00000001 0000000 ≈ 1.175494351 × 10−38 (min normalized positive value in bfloat16 precision)
+                7f7f = 0 11111110 1111111 ≈ 3.38953139 × 10<sup>38</sup> (max finite positive value in bfloat16 precision) <br/>
+                0080 = 0 00000001 0000000 ≈ 1.175494351 × 10<sup>−38</sup> (min normalized positive value in bfloat16 precision)
                 </p>
 
                 <h2>=== Zeros and infinities ===</h2>
