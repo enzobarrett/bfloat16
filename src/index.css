@@ -137,7 +137,7 @@ form {
 /*  }*/
 /*}*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
   .App {
     display: none;
   }
@@ -153,6 +153,6 @@ form {
   padding-right: 5%;
 }
 
-sup {
-  font-size: 1em;
-}
+/*sup {*/
+/*  font-size: 1em;*/
+/*}*/
