@@ -8,6 +8,10 @@ class Bfloat extends React.Component {
         this.state = {bitState : new Array(16).fill(0)};
     }
 
+    componentDidMount() {
+        document.title = "bFloat16 Visualizer"
+    }
+
     changeBitState(bit, value) {
         let bitStates = [...this.state.bitState];
         bitStates[bit] = value
