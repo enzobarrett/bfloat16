@@ -127,9 +127,9 @@ form {
   display: none;
 }
 
-@media only screen and (max-width: 759px) {
+@media screen and (orientation:portrait) {
   .App {
-      display: none;
+    display: none;
   }
   .warning {
     display: inline-block;
