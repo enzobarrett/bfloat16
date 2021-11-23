@@ -1,13 +1,110 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+}
+
+main {
+  padding-top: 5%;
+}
+
+input[type="checkbox"] {
+  transform:scale(2, 2);
+  display: flex;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.exp-color > div {
+  margin:10px;
+  display: inline-block;
+}
+
+.mantissa-color > div {
+  margin:10px;
+  display: inline-block;
+}
+
+.signBit-color > div {
+  margin:10px;
+  display: inline-block;
+}
+
+.signBit-color {
+  background-color: orange;
+}
+
+.exp-color {
+  background-color: lightgreen;
+}
+
+.mantissa-color {
+    background-color: mediumturquoise;
+}
+
+.desc {
+  margin:0px;
+}
+
+.bitState {
+  margin:0px;
+}
+
+.signNumber, .exponent, .manOffset, .manVal, .resultVal {
+  display:inline-block;
+  font-size: xxx-large;
+}
+
+.signNumber {
+  background-color: orange;
+    padding:5px;
+
+}
+
+.exponent {
+  background-color: lightgreen;
+  padding:5px;
+}
+
+.result {
+  background-color: gainsboro;
+  padding: 5px;
+}
+
+.man {
+  background-color: mediumturquoise;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    padding: 5px;
+}
+
+.manOffset, .manVal, .resultVal {
+  margin:0px;
+}
+
+.expandedView {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.times, .plus, .equals {
+  margin: 10px;
+}
+
+.paypal {
+  margin-top: 4%;
 }
