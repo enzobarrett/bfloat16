@@ -26,7 +26,7 @@ function App() {
                 c000 = 1 10000000 0000000 = −2
                 </p>
 
-                <p>
+                <p className={"maxMin"}>
                 7f7f = 0 11111110 1111111 ≈ 3.38953139 × 10<sup>38</sup> (max finite positive value in bfloat16 precision) <br/>
                 0080 = 0 00000001 0000000 ≈ 1.175494351 × 10<sup>−38</sup> (min normalized positive value in bfloat16 precision)
                 </p>
