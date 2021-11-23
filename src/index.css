@@ -127,7 +127,7 @@ form {
   display: none;
 }
 
-@media screen and (orientation:portrait) {
+@media screen and (orientation:portrait){
   .App {
     display: none;
   }
@@ -141,4 +141,8 @@ form {
   margin-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
+}
+
+sup {
+  font-size: 1em;
 }
