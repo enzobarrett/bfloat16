@@ -107,9 +107,9 @@ class ExpandedView extends React.Component {
                 <FontAwesomeIcon className={"times"} icon={faTimes} size="2x"/>
 
                 <div className={"man"}>
-                    <h1 className={"manOffset"}>1</h1>
+                    <h1 className={"manOffset"}>(1</h1>
                     <FontAwesomeIcon className={"plus"} icon={faPlus} size="2x"/>
-                    <h1 className={"manVal"}>{manValue}</h1>
+                    <h1 className={"manVal"}>{manValue})</h1>
                 </div>
 
                 <FontAwesomeIcon className={"equals"} icon={faEquals} size="2x"/>
